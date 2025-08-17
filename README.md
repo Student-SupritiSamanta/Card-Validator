@@ -11,5 +11,3 @@ This is a simple web-based project that validates credit card numbers using the 
 ## How It Works
 The Luhn Algorithm (a checksum formula) is applied to the entered card number. If the number passes the check, it’s marked as **valid**, otherwise as **invalid**.  
 
-## Demo
-👉 Open `index.html` in your browser to run it.
