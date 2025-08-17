@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luhn Check</title>
+    <script src="luhn.js" defer></script>
+    <style>
+        #result {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .valid {
+            color: green;
+        }
+        .invalid {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Credit Card Validator</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+        <label for="card">Card Number:</label>
+        <input type="text" id="card" placeholder="Enter card number" required><br><br>
+
+        <span id="result"></span><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
